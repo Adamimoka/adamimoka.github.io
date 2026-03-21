@@ -3,25 +3,277 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Adam Mokdad - Computer Engineering</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,300&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">Adam Mokdad</a>
+      <ul class="nav-links">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <main>
-    <h1>Hi, I'm Adam.</h1>
-    <p>I'm a Computer Engineering student.</p>
 
-    <h2>Content</h2>
-    <p>
-      This page is still under development.
-    </p>
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-tag">Available for Summer 2026 Internships</div>
+      <h1 class="hero-name">Adam Mokdad</h1>
+      <p class="hero-sub">
+        Computer Engineering student at UMass Amherst - 4.0 GPA, robotics lead, and ML builder.
+      </p>
+      <div class="hero-badges">
+        <span class="badge">UMass Amherst '29</span>
+        <span class="badge">GPA 4.0</span>
+        <span class="badge">ML &amp; Systems</span>
+        <span class="badge">Robotics</span>
+        <span class="badge">Full-Stack</span>
+      </div>
+      <div class="hero-cta">
+        <a href="mailto:adamimoka@gmail.com" class="btn btn-primary">Email</a>
+        <a href="https://github.com/adamimoka" class="btn btn-ghost" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/adam-mokdad-737197384/" class="btn btn-ghost" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
 
-    <h2>Contact</h2>
-    <p>
-      <a href="mailto:adamimoka@gmail.com">Email</a> |
-      <!-- <a href="https://linkedin.com/in/TODO">LinkedIn</a> | -->
-      <a href="https://github.com/adamimoka">GitHub</a>
-    </p>
+    <!-- SKILLS -->
+    <section id="skills">
+      <p class="sec-label reveal">Skills</p>
+      <h2 class="sec-title reveal">What I work with</h2>
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <div class="skill-group-name">Languages</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">C#</span>
+            <span class="skill-tag">Lua</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <div class="skill-group-name">ML &amp; Vision</div>
+          <div class="skill-tags">
+            <span class="skill-tag">PyTorch</span>
+            <span class="skill-tag">TensorFlow</span>
+            <span class="skill-tag">OpenCV</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <div class="skill-group-name">Web &amp; Back-end</div>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <div class="skill-group-name">Tools</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">VS Code</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <p class="sec-label reveal">Projects</p>
+      <h2 class="sec-title reveal">Things I've built</h2>
+      <div class="projects-list">
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <div class="project-name">NLP Database Pipeline</div>
+            <div class="project-year">Fall 2025</div>
+          </div>
+          <div class="project-org">ENGIN 191 Final Project · UMass Amherst</div>
+          <p class="project-desc">
+            Built an end-to-end natural-language processing system that parses free-text input and writes structured records to a relational database. Managed the full ML lifecycle - dataset curation, model training, performance evaluation, and deployment - balancing accuracy against real system constraints.
+          </p>
+          <div class="project-stack">
+            <span class="stack-tag">Python</span>
+            <span class="stack-tag">PyTorch</span>
+            <span class="stack-tag">NLP</span>
+            <span class="stack-tag">SQL</span>
+            <span class="stack-tag">ML Pipeline</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <div class="project-name">Blot - Generative Art</div>
+            <div class="project-year">2024</div>
+          </div>
+          <div class="project-org">Hack Club &amp; MIT Center for Bits and Atoms</div>
+          <p class="project-desc">
+            Created a technically complex generative artwork accepted into the Hack Club public Blot gallery - a collaboration with MIT's Center for Bits and Atoms. Recognized with an award for excellence in programming and design by Hack Club and MIT.
+          </p>
+          <div class="project-stack">
+            <span class="stack-tag">JavaScript</span>
+            <span class="stack-tag">Generative Art</span>
+            <span class="stack-tag">Creative Coding</span>
+          </div>
+          <a href="https://github.com/Adamimoka/blot" class="project-link" target="_blank" rel="noopener">
+            View on GitHub
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <p class="sec-label reveal">Experience</p>
+      <h2 class="sec-title reveal">Where I've contributed</h2>
+      <div class="exp-list">
+
+        <div class="exp-item reveal">
+          <div class="exp-meta">
+            <div class="exp-period">Nov 2022 - Mar 2025</div>
+            <div class="exp-org">FIRST Robotics</div>
+          </div>
+          <div class="exp-body">
+            <div class="exp-role">Programming Lead - Warrior Robotics</div>
+            <ul class="exp-points">
+              <li>Developed computer vision, autonomous path planning, and motor integration systems in C++ and Python.</li>
+              <li>Coordinated development across mechanical and electrical sub-teams to deliver a competition-ready robot.</li>
+              <li>Earned 2nd place out of 36 teams at the FIRST Robotics Reading Competition (2024).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-item reveal">
+          <div class="exp-meta">
+            <div class="exp-period">Jun 2023 - Sep 2024</div>
+            <div class="exp-org">Community Education</div>
+          </div>
+          <div class="exp-body">
+            <div class="exp-role">Co-founder &amp; Instructor - Computer Engineering Class</div>
+            <ul class="exp-points">
+              <li>Co-founded and taught an introductory programming and circuitry course using Raspberry Pi.</li>
+              <li>Designed hands-on lessons making hardware and software fundamentals accessible to younger students.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-item reveal">
+          <div class="exp-meta">
+            <div class="exp-period">Aug 2021 - May 2024</div>
+            <div class="exp-org">High School</div>
+          </div>
+          <div class="exp-body">
+            <div class="exp-role">Peer Tutor &amp; Organizer - Programming Club</div>
+            <ul class="exp-points">
+              <li>Served as peer tutor supporting members with debugging, problem-solving, and code quality.</li>
+              <li>Participated in hackathons (2022-2023) and co-organized the annual hackathon in 2024.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+      <p class="sec-label reveal">Education</p>
+      <h2 class="sec-title reveal">Background</h2>
+      <div class="edu-card reveal">
+        <div class="edu-info">
+          <div class="edu-school">University of Massachusetts Amherst</div>
+          <div class="edu-degree">B.E. Computer Engineering · Graduating Spring 2029</div>
+          <div class="edu-courses">
+            <div class="edu-courses-label">Relevant Coursework</div>
+            <ul>
+              <li>ENGIN 112 - Intro Electrical &amp; Computer Engineering (computer architecture, signal transmission, PD controllers)</li>
+              <li>ENGIN 191 - Machine Learning Systems (model design, performance, scalability, system constraints)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="edu-stat">
+          <div class="edu-gpa-num">4.0</div>
+          <div class="edu-gpa-label">GPA</div>
+          <div class="edu-year">Class of 2029</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AWARDS -->
+    <section id="awards">
+      <p class="sec-label reveal">Recognition</p>
+      <h2 class="sec-title reveal">Awards &amp; honors</h2>
+      <div class="awards-grid">
+        <div class="award-card reveal">
+          <div class="award-icon">🏆</div>
+          <div class="award-text">
+            <div class="award-title">Excellence in Programming &amp; Design</div>
+            <div class="award-org">Hack Club &amp; MIT · 2024</div>
+          </div>
+        </div>
+        <div class="award-card reveal">
+          <div class="award-icon">🤖</div>
+          <div class="award-text">
+            <div class="award-title">FIRST Robotics - District Event Finalist</div>
+            <div class="award-org">2nd of 36 teams · Apr 2024</div>
+          </div>
+        </div>
+        <div class="award-card reveal">
+          <div class="award-icon">📚</div>
+          <div class="award-text">
+            <div class="award-title">AP Scholar with Distinction</div>
+            <div class="award-org">College Board · May 2024</div>
+          </div>
+        </div>
+        <div class="award-card reveal">
+          <div class="award-icon">🎨</div>
+          <div class="award-text">
+            <div class="award-title">Award for Visual Design</div>
+            <div class="award-org">CS Exhibition · Lincoln-Sudbury HS · 2023</div>
+          </div>
+        </div>
+        <div class="award-card reveal">
+          <div class="award-icon">💡</div>
+          <div class="award-text">
+            <div class="award-title">Award for Creativity, Innovation &amp; Scope</div>
+            <div class="award-org">CS · Lincoln-Sudbury HS · 2023</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <p class="sec-label">Contact</p>
+      <h2 class="sec-title">Let's talk!</h2>
+      <p class="contact-sub">
+        Open to summer 2026 internship opportunities.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:adamimoka@gmail.com" class="btn btn-primary">Email</a>
+        <a href="https://www.linkedin.com/in/adam-mokdad-737197384/" class="btn btn-ghost" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+
   </main>
+
+  <footer>
+    <p>© 2026 Adam Mokdad</p>
+    <p>Built with HTML &amp; CSS</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
