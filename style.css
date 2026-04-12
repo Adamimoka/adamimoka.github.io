@@ -7,10 +7,12 @@
     --ink-mid: #aaaaaa;
     --ink-light: #666666;
     --accent: #00ff80;
-    --accent-soft: #00ff8018;
+    --accent-dark: #00cc66;
+    --accent-secondary: #66a6ff;
+    --accent-secondary-dark: #5285cc;
     --border: #2a2a2a;
     --border-light: #222222;
-    --serif: 'Fraunces', Georgia, serif;
+    --serif: Georgia, serif;
     --sans: 'Plus Jakarta Sans', system-ui, sans-serif;
     --max: 820px;
     --nav-h: 64px;
@@ -144,11 +146,11 @@ section + section { border-top: 1px solid var(--border); }
     transition: all .2s;
 }
 .btn-primary {
-    background: var(--accent);
-    color: #111111;
-    border: 1.5px solid var(--accent);
+    background: var(--accent-secondary);
+    color: var(--bg);
+    border: 1.5px solid var(--accent-secondary);
 }
-.btn-primary:hover { background: #00cc66; border-color: #00cc66; }
+.btn-primary:hover { background: var(--accent-secondary-dark); border-color: var(--accent-secondary-dark); }
 .btn-ghost {
     background: transparent;
     color: var(--ink);
@@ -223,7 +225,7 @@ section + section { border-top: 1px solid var(--border); }
     content: '';
     position: absolute; top: 0; left: 0; right: 0;
     height: 3px;
-    background: linear-gradient(90deg, var(--accent), #60a5fa);
+    background: linear-gradient(90deg, var(--accent), var(--accent-secondary));
     opacity: 0;
     transition: opacity .25s;
 }
@@ -266,15 +268,6 @@ section + section { border-top: 1px solid var(--border); }
     margin-bottom: 20px;
 }
 .project-stack { display: flex; flex-wrap: wrap; gap: 6px; }
-.stack-tag {
-    font-size: .74rem;
-    font-weight: 500;
-    color: var(--ink-mid);
-    background: var(--accent-soft);
-    color: var(--accent);
-    border-radius: 4px;
-    padding: 3px 9px;
-}
 .project-link {
     display: inline-flex; align-items: center; gap: 6px;
     font-size: .8rem;
@@ -284,7 +277,7 @@ section + section { border-top: 1px solid var(--border); }
     margin-top: 16px;
     transition: color .2s;
 }
-.project-link:hover { color: #00cc66; }
+.project-link:hover { color: var(--accent-dark); }
 
 /* --- EXPERIENCE --- */
 .exp-list { display: flex; flex-direction: column; gap: 0; }
